@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  video-downloader:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./downloads:/downloads
+      - ./cookies:/app/cookies:ro
+    restart: always
