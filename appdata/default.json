@@ -1,0 +1,1 @@
+{ "Port": 17442, "YoutubeDLBinary": "yt-dlp", "EnablePublicAPI": true, "APIKeys": ["ytdl-api"], "UID": 1000, "GID": 1000 }

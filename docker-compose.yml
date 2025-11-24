@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  ytdl-api:
+    build: .
+    container_name: ytdl-api
+    ports:
+      - "8998:17442"
+    volumes:
+      - ./appdata:/app/appdata
+      - ./public:/app/public
+    restart: always
