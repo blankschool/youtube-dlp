@@ -24,7 +24,9 @@ COPY backend /app
 COPY appdata /app/appdata
 COPY public /app/public
 
-RUN npm install
+# pm2-runtime is required by the backend's start script
+RUN npm install -g pm2 \
+    && npm install
 
 EXPOSE 17442
 
